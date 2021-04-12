@@ -1,0 +1,10 @@
+# path
+__pycache__
+.vscode
+
+# file
+*.gz
+*.pt 
+*-ubyte
+*.pth
+*.pkl
