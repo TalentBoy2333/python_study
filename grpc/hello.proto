@@ -2,6 +2,15 @@ syntax = "proto3";
 
 package test; 
 
-server Bilibili{
-    rpc Hello(HelloReq) returns (HelloReply)
+service Bilibili{
+    rpc Hello(HelloReq) returns (HelloReply){} 
 }
+
+message HelloReq {
+    string name = 1; 
+    int32 age = 2; 
+}
+
+message HelloReply {
+    string result = 1; 
+} 
